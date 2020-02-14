@@ -6,9 +6,35 @@
   </head>
   <body>
     <h1>Simple Audio Examples</h1>
-    <audio src="audio/Companion.mp3" controls></audio><br>
-    <audio src="audio/Albatroz.mp3" controls></audio><br>
-    <audio src="audio/STP.mp3" controls></audio>
+    <audio id="jukebox" src=""></audio>
+
+    <div>
+        <img src="images/chupa.jpg" alt="cover albatraoz"><br>
+        <div class="controller">
+            <button class="playTrack" data-trackref="Albatroz">play</button>
+            <button class="pauseTrack">pause</button>
+            <button class="rwTrack">rewind</button>
+        </div>
+    </div>
+
+    <div>
+        <img src="images/companion.jpg" alt="cover companion" width="230px"><br>
+        <div>
+            <button class="playTrack" data-trackref="Companion">play</button>
+            <button class="pauseTrack">pause</button>
+            <button class="rwTrack">rewind</button>
+        </div>
+    </div>
+
+    <div>
+        <img src="images/stp.jpg" alt="cover stp" width="230px"><br>
+        <div>
+            <button class="playTrack" data-trackref="STP">play</button>
+            <button class="pauseTrack">pause</button>
+            <button class="rwTrack">rewind</button>
+        </div>
+    </div>
+
     <script src="js/main.js"></script>
   </body>
 </html>
